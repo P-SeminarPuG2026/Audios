@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+  <meta charset="UTF-8">
+  <title>Weiterleitung</title>
   <script>
-    const routes = {
-      "audio_1": "https://de.wikipedia.org/wiki/Datei:Eo_circle_blue_number-1.svg",
-      "audio_2": "https://de.wikipedia.org/wiki/Datei:Eo_circle_blue_number-2.svg",
-      "audio_3": "https://de.wikipedia.org/wiki/Datei:Eo_circle_blue_number-3.svg"
-    };
-
-    const path = window.location.pathname.split("/")[2];
-
-    if (routes[path]) {
-      window.location.replace(routes[path]);
-    } else {
-      document.body.innerHTML = "Link nicht gefunden";
-    }
+    // 301-ähnliche Weiterleitung
+    window.location.replace("https://www.helmut-schmidt.de/ausstellungen/challengingdemocracy");
   </script>
 </head>
-<body></body>
+<body>
+  <p>Weiterleitung…</p>
+</body>
 </html>
